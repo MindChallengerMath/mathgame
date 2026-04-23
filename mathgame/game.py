@@ -1,5 +1,5 @@
-import functionality
-from functionality import Questions
+import operations
+from operations import Math_functions
 import random
 import os
 # Add a check to make sure the user input is a number.
@@ -19,9 +19,9 @@ def difficulty(counter):
         except ValueError:
             print("This is not a number.")
     return counter
-operations = "functionality.py"
-if os.path.exists(operations):
-    print(f"{operations} is visible")
+operators_file = "operations.py"
+if os.path.exists(operators_file):
+    print(f"{operators_file} is visible")
 while True:
     counter = difficulty(counter)
     running = True
@@ -36,7 +36,7 @@ while True:
         # when I get better at mathematics, change it to uniform
         first_number = round(random.randint(1, num_pool), 2)
         second_number = round(random.randint(1,num_pool), 2)
-        number = Questions()
+        number = Math_functions()
         sign = random.choice(signs)
         if sign == "+":
             answer = round(number.plus(first_number, second_number), 2)
@@ -67,5 +67,3 @@ while True:
     restart = input("Restart(Y/N): ").upper()
     if restart == "N":
         break
-
-        

@@ -1,5 +1,5 @@
 import random
-class Questions:
+class Math_functions:
     def plus(self, a, b):
         return a + b
     def minus(self, a, b):
@@ -8,5 +8,3 @@ class Questions:
         return a * b
     def divide(self, a, b):
         return a / b
-    
-
